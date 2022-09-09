@@ -26,7 +26,7 @@
 * [ ] Check for cloud assets ([cloudenum](https://github.com/initstring/cloud\_enum))
 * [ ] [Shodan](https://shodan.io/) search
 * [ ] [Transfer zone](https://book.hacktricks.xyz/network-services-pentesting/pentesting-dns)
-* [ ] Take screenshots ([gowitness](https://github.com/sensepost/gowitness)
+* [ ] Take screenshots ([gowitness](https://github.com/sensepost/gowitness))
 
 ### Small scope
 
