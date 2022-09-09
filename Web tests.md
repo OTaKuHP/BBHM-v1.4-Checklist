@@ -7,7 +7,7 @@
 * Small: a single website
 
 ### Large scope
-* [ ] Identify client's networks from name ([securitytrails]https://securitytrails.com/)
+* [ ] Identify client's networks from name ([securitytrails](https://securitytrails.com/))
 * [ ] Get [ASN] using `whois` for IP ranges ([amass](https://github.com/OWASP/Amass), [asnlookup](https://github.com/yassineaboukir/Asnlookup), [metabigor](https://github.com/j3ssie/metabigor), [bgp](https://bgp.he.net/))
 * [ ] Review latest [acquisitions](https://www.crunchbase.com/)
 * [ ] Get relationships by registrants ([viewdns](https://viewdns.info/reversewhois/))
@@ -15,17 +15,17 @@
 
 ### Medium scope
 
-* [ ] Use API key from sectrails on ([get_subdomains] https://github.com/dinosn/get_subdomains) to obtain data fast.
+* [ ] Use API key from sectrails on ([get_subdomains] (https://github.com/dinosn/get_subdomains)) to obtain data fast.
 * [ ] The following items with caution.
 * [ ] Enumerate subdomains ([amass](https://github.com/OWASP/Amass) with all available API keys), might cause service issues depending on the target due to multiple dns requests.
 * [ ] Subdomain bruteforce ([puredns](https://github.com/d3mondev/puredns) with [wordlist](https://gist.github.com/six2dez/a307a04a222fab5a57466c51e1569acf))
 * [ ] Permute subdomains ([gotator](https://github.com/Josue87/gotator) or [ripgen](https://github.com/resyncgg/ripgen) with [wordlist](https://gist.github.com/six2dez/ffc2b14d283e8f8eff6ac83e20a3c4b4))
 * [ ] Rest tools below are safe tests.
 * [ ] Identify alive subdomains ([httpx](https://github.com/projectdiscovery/httpx))
-* [ ] [Subdomain takeovers](https://github.com/EdOverflow/can-i-take-over-xyz) ([nuclei-takeovers](https://github.com/projectdiscovery/nuclei-templates/tree/master/takeovers)) ([takeover]https://github.com/m4ll0k/takeover)
+* [ ] ([Subdomain takeovers](https://github.com/EdOverflow/can-i-take-over-xyz)) ([nuclei-takeovers](https://github.com/projectdiscovery/nuclei-templates/tree/master/takeovers)) ([takeover](https://github.com/m4ll0k/takeover))
 * [ ] Check for cloud assets ([cloudenum](https://github.com/initstring/cloud\_enum))
-* [ ] [Shodan](https://shodan.io/) search
-* [ ] [Transfer zone](https://book.hacktricks.xyz/network-services-pentesting/pentesting-dns)
+* [ ] ([Shodan](https://shodan.io/)) search
+* [ ] ([Transfer zone](https://book.hacktricks.xyz/network-services-pentesting/pentesting-dns))
 * [ ] Take screenshots ([gowitness](https://github.com/sensepost/gowitness))
 
 ### Small scope
@@ -33,35 +33,23 @@
 * [ ] Identify web server, technologies and database ([httpx](https://github.com/projectdiscovery/httpx))
 * [ ] Adjust Burp plugins based on the technologies in use (IIS/Tomcat/Apache)
 * [ ] Add the website on the scope on Burp and crawl the website.
-* [ ] Use ([ffuf]https://github.com/ffuf/ffuf)) or ([dirsearch]https://github.com/maurosoria/dirsearch) with the list of [wordlist](https://github.com/maurosoria/dirsearch/blob/master/db/dicc.txt)
-* [ ] Try to locate `/robots.txt` , `/crossdomain.xml` `/clientaccesspolicy.xml` `/sitemap.xml` and `/.well-known/`
-* [ ] Review comments on source code (Burp Engagement Tools)
-* [ ] [Directory enumeration](../enumeration/web/crawl-fuzz.md)
-* [ ] Web fuzzing ([ffuf](https://github.com/ffuf/ffuf) and [wordlist](https://github.com/six2dez/OneListForAll))
-* [ ] Find[ leaked ids, emails](../recon/public-info-gathering.md) ([pwndb](https://github.com/davidtavarez/pwndb))
+* [ ] Use ([ffuf]https://github.com/ffuf/ffuf)) or ([dirsearch]https://github.com/maurosoria/dirsearch) with the list of [dirsearch](https://github.com/maurosoria/dirsearch/blob/master/db/dicc.txt)
+* [ ] Based on the findings proceed on using a larger ([wordlist](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/raft-medium-words-lowercase.txt))
+* [ ] Review comments on source code (Burp Engagement Tools), Review js files, use ([js miner](https://portswigger.net/bappstore/0ab7a94d8e11449daaf0fb387431225b))
+* [ ] Find leaked ids, emails ([dehashed]https://dehashed.com/))
 * [ ] Identify WAF ([whatwaf](https://github.com/Ekultek/WhatWaf), [wafw00f](https://github.com/EnableSecurity/wafw00f))
-* [ ] [Google dorking](../recon/public-info-gathering.md#google)
-* [ ] [GitHub dorking](../recon/public-info-gathering.md#github)/Github tools ([githound](https://github.com/tillson/git-hound), [gitdorks\_go](https://github.com/damit5/gitdorks\_go))
+* [ ] Google dorking for potential path leaks
+* [ ] GitHub dorking/Github tools ([githound](https://github.com/tillson/git-hound), [gitdorks\_go](https://github.com/damit5/gitdorks\_go))
 * [ ] Get urls ([gau](https://github.com/lc/gau) , [waybackurls](https://github.com/tomnomnom/waybackurls), [gospider](https://github.com/jaeles-project/gospider))
 * [ ] Check potential vulnerable urls ([gf-patterns](https://github.com/1ndianl33t/Gf-Patterns))
 * [ ] Automatic XSS finder ([dalfox](https://github.com/hahwul/dalfox))
-* [ ] Locate admin and login panel
+* [ ] Locate admin and login panel ([admin-finder](https://github.com/the-c0d3r/admin-finder))
 * [ ] Broken link hijacking ([blc](https://github.com/stevenvachon/broken-link-checker))
 * [ ] Get all JS files ([subjs](https://github.com/lc/subjs), [xnLinkFinder](https://github.com/xnl-h4ck3r/xnLinkFinder))
 * [ ] JS hardcoded APIs and secrets ([nuclei-tokens](https://github.com/projectdiscovery/nuclei-templates/tree/4e3f843e15c68f816f0ef6abce5d30b6cf6d4a30/exposures/tokens))
 * [ ] JS analysis ([subjs](https://github.com/lc/subjs), [JSA](https://github.com/w9w/JSA), [xnLinkFinder](https://github.com/xnl-h4ck3r/xnLinkFinder), [getjswords](https://github.com/m4ll0k/BBTz))
-* [ ] Run automated scanner ([nuclei](https://github.com/projectdiscovery/nuclei))
+* [ ] Run automated scanner ([nuclei](https://github.com/projectdiscovery/nuclei)), limit to related tasks -severity critical,high.
 * [ ] Test CORS ([CORScanner](https://github.com/chenjj/CORScanner), [corsy](https://github.com/s0md3v/Corsy))
-
-### Network
-
-* [ ] Check ICMP packets allowed
-* [ ] Check DMARC/SPF policies ([spoofcheck](https://github.com/BishopFox/spoofcheck))
-* [ ] Open ports with [Shodan](https://www.shodan.io/)
-* [ ] [Port scan](../recon/network-scanning.md#nmap) to all ports
-* [ ] Check UDP ports ([udp-proto-scanner](https://github.com/CiscoCXSecurity/udp-proto-scanner) or nmap)
-* [ ] Test [SSL ](../enumeration/ssl-tls.md)([testssl](https://github.com/drwetter/testssl.sh))
-* [ ] If got creds, try password [spraying ](https://github.com/x90skysn3k/brutespray)for all the services discovered
 
 ### Preparation
 
@@ -69,6 +57,7 @@
 * [ ] Make a list with all possible test cases
 * [ ] Understand the business area and what their customer needs
 * [ ] Get a list of every asset (all\_subdomains.txt, live\_subdomains.txt, waybackurls.txt, hidden\_directories.txt, nmap\_results.txt, GitHub\_search.txt, altdns\_subdomain.txt, vulnerable\_links.txt, js\_files.txt)
+* [ ] Try to understand business logic / function of the overall setup.
 
 ## User management
 
