@@ -31,6 +31,9 @@
 ### Small scope
 
 * [ ] Identify web server, technologies and database ([httpx](https://github.com/projectdiscovery/httpx))
+* [ ] Adjust Burp plugins based on the technologies in use (IIS/Tomcat/Apache)
+* [ ] Add the website on the scope on Burp and crawl the website.
+* [ ] Use ([ffuf]https://github.com/ffuf/ffuf)) or ([dirsearch]https://github.com/maurosoria/dirsearch) with the list of [wordlist](https://github.com/maurosoria/dirsearch/blob/master/db/dicc.txt)
 * [ ] Try to locate `/robots.txt` , `/crossdomain.xml` `/clientaccesspolicy.xml` `/sitemap.xml` and `/.well-known/`
 * [ ] Review comments on source code (Burp Engagement Tools)
 * [ ] [Directory enumeration](../enumeration/web/crawl-fuzz.md)
