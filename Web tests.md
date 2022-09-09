@@ -15,7 +15,7 @@
 
 ### Medium scope
 
-* [ ] Use API key from sectrails on ([get_subdomains] (https://github.com/dinosn/get_subdomains)) to obtain data fast.
+* [ ] Use API key from sectrails on ([get_subdomains](https://github.com/dinosn/get_subdomains)) to obtain data fast.
 * [ ] The following items with caution.
 * [ ] Enumerate subdomains ([amass](https://github.com/OWASP/Amass) with all available API keys), might cause service issues depending on the target due to multiple dns requests.
 * [ ] Subdomain bruteforce ([puredns](https://github.com/d3mondev/puredns) with [wordlist](https://gist.github.com/six2dez/a307a04a222fab5a57466c51e1569acf))
