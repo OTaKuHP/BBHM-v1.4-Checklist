@@ -7,24 +7,26 @@
 * Small: a single website
 
 ### Large scope
-
-* [ ] Get [ASN](../recon/public-info-gathering.md#amass) for IP ranges ([amass](https://github.com/OWASP/Amass), [asnlookup](https://github.com/yassineaboukir/Asnlookup), [metabigor](https://github.com/j3ssie/metabigor), [bgp](https://bgp.he.net/))
+* [ ] Identify client's networks from name ([securitytrails]https://securitytrails.com/)
+* [ ] Get [ASN] using `whois` for IP ranges ([amass](https://github.com/OWASP/Amass), [asnlookup](https://github.com/yassineaboukir/Asnlookup), [metabigor](https://github.com/j3ssie/metabigor), [bgp](https://bgp.he.net/))
 * [ ] Review latest [acquisitions](https://www.crunchbase.com/)
 * [ ] Get relationships by registrants ([viewdns](https://viewdns.info/reversewhois/))
 * [ ] Go to medium scope for each domain
 
 ### Medium scope
 
-* [ ] [Enumerate subdomains](../recon/subdomain-enum/) ([amass](https://github.com/OWASP/Amass) or [subfinder](https://github.com/projectdiscovery/subfinder) with all available API keys)
+* [ ] Use API key from sectrails on ([get_subdomains] https://github.com/dinosn/get_subdomains) to obtain data fast.
+* [ ] The following items with caution.
+* [ ] Enumerate subdomains ([amass](https://github.com/OWASP/Amass) with all available API keys), might cause service issues depending on the target due to multiple dns requests.
 * [ ] Subdomain bruteforce ([puredns](https://github.com/d3mondev/puredns) with [wordlist](https://gist.github.com/six2dez/a307a04a222fab5a57466c51e1569acf))
 * [ ] Permute subdomains ([gotator](https://github.com/Josue87/gotator) or [ripgen](https://github.com/resyncgg/ripgen) with [wordlist](https://gist.github.com/six2dez/ffc2b14d283e8f8eff6ac83e20a3c4b4))
+* [ ] Rest tools below are safe tests.
 * [ ] Identify alive subdomains ([httpx](https://github.com/projectdiscovery/httpx))
-* [ ] [Subdomain takeovers](../recon/subdomain-enum/subdomain-takeover.md) ([nuclei-takeovers](https://github.com/projectdiscovery/nuclei-templates/tree/master/takeovers))
-* [ ] Check for [cloud assets](../enumeration/cloud/cloud-info-recon.md) ([cloudenum](https://github.com/initstring/cloud\_enum))
-* [ ] [Shodan](../recon/public-info-gathering.md#shodan) search
-* [ ] [Transfer zone](https://six2dez.gitbook.io/pentest-book/enumeration/ports#port-53-dns)
-* [ ] Subdomains recursive search
-* [ ] Take screenshots ([gowitness](https://github.com/sensepost/gowitness), [webscreenshot](https://github.com/maaaaz/webscreenshot), [aquatone](https://github.com/michenriksen/aquatone))
+* [ ] [Subdomain takeovers](https://github.com/EdOverflow/can-i-take-over-xyz) ([nuclei-takeovers](https://github.com/projectdiscovery/nuclei-templates/tree/master/takeovers)) ([takeover]https://github.com/m4ll0k/takeover)
+* [ ] Check for cloud assets ([cloudenum](https://github.com/initstring/cloud\_enum))
+* [ ] [Shodan](https://shodan.io/) search
+* [ ] [Transfer zone](https://book.hacktricks.xyz/network-services-pentesting/pentesting-dns)
+* [ ] Take screenshots ([gowitness](https://github.com/sensepost/gowitness)
 
 ### Small scope
 
